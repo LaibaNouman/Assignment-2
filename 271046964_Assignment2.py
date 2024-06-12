@@ -88,8 +88,8 @@ def user_selection():
             confirmation = input("\nAre you sure you want to continue? (y/n): ")
             if confirmation == "y":
                     user_selection2 = int(input("\nEnter the desired time slot: "))    
-                    seats_no = int(input("\nEnter the number of seats you want to book (7$ each): "))
-                    details = Ticket(seats_no, 7)
+                    seats_no = int(input("\nEnter the number of seats you want to book (5$ each): "))
+                    details = Ticket(seats_no, 5)
                     if user_selection2 == 1:
                         details.display_ticket_info(movie_title, "6:00 AM - 9:00 AM")
                     elif user_selection2 == 2:
@@ -107,8 +107,8 @@ def user_selection():
             confirmation = input("\nAre you sure you want to continue? (y/n): ")
             if confirmation == "y":
                     user_selection2 = int(input("\nEnter the desired time slot: "))
-                    seats_no = int(input("\nEnter the number of seats you want to book (7$ each): "))
-                    details = Ticket(seats_no, 7)
+                    seats_no = int(input("\nEnter the number of seats you want to book (5$ each): "))
+                    details = Ticket(seats_no, 5)
                     if user_selection2 == 1:
                         details.display_ticket_info(movie_title, "6:00 AM - 9:00 AM")
                     break
@@ -130,8 +130,8 @@ def user_selection():
             confirmation = input("\nAre you sure you want to continue? (y/n): ")
             if confirmation == "y":
                     user_selection2 = int(input("\nEnter the desired time slot: "))
-                    seats_no = int(input("\nEnter the number of seats you want to book (7$ each): "))
-                    details = Ticket(seats_no, 7)  
+                    seats_no = int(input("\nEnter the number of seats you want to book (5$ each): "))
+                    details = Ticket(seats_no, 5)  
                     if user_selection2 == 1:
                         details.display_ticket_info(movie_title, "6:00 PM - 9:00 PM")
                     elif user_selection2 == 2:
@@ -157,8 +157,8 @@ def user_selection():
             confirmation = input("\nAre you sure you want to continue? (y/n): ")
             if confirmation == "y":
                     user_selection2 = int(input("\nEnter the desired time slot: "))
-                    seats_no = int(input("\nEnter the number of seats you want to book (7$ each): "))
-                    details = Ticket(seats_no, 7)
+                    seats_no = int(input("\nEnter the number of seats you want to book (5$ each): "))
+                    details = Ticket(seats_no, 5)
                     if user_selection2 == 1:
                         details.display_ticket_info(movie_title, "6:00 PM - 9:00 PM")
                     elif user_selection2 == 2:
@@ -174,6 +174,7 @@ def user_selection():
             print("Invalid choice was made.")
     
 def login_page():
+    
     print("\nWelcome, please enter your username and password to access the movie lists.\n")
     
     count = 0
